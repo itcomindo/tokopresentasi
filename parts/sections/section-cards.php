@@ -16,7 +16,7 @@ defined('ABSPATH') || die('No script kiddies please!');
                 <div class="top">
                     <div class="top-inner">
                         <h2 class="head head-section">The Quickest Way To Onboard Talent To Your Team</h2>
-                        <p>Growmodo is a design & development subscription that takes the pain out of hiring
+                        <p>The Brand is a design & development subscription that takes the pain out of hiring
                             creatives
                             for your business.</p>
                     </div>
