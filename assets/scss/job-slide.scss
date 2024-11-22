@@ -1,0 +1,37 @@
+#job-slide {
+  background-color: var(--color-dark-1);
+  color: var(--color-light-4);
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  .inner-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .jobs {
+      display: flex;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+
+      .job {
+        display: flex;
+        white-space: nowrap;
+
+        .item {
+          background-color: var(--color-dark-2);
+          width: 270px;
+          margin: 0 10px;
+          padding: 8px 0;
+          text-align: center;
+          border-radius: 8px;
+          position: relative;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

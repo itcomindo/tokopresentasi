@@ -1,0 +1,102 @@
+#issues {
+  background-color: var(--color-dark-1);
+  color: var(--color-light-1);
+  .inner-section {
+    .container {
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .col {
+          display: flex;
+          flex-direction: column;
+        }
+        .top {
+          width: 70%;
+          h2 {
+            color: var(--color-light-4);
+            font-size: 58px;
+            font-weight: 600;
+            line-height: 64px;
+            position: relative;
+            box-sizing: border-box;
+            text-rendering: optimizelegibility;
+          }
+        }
+        .mid {
+          .inner-mid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            .left {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+            }
+            .right {
+              display: flex;
+              flex-direction: column;
+              height: 13rem;
+              overflow: hidden;
+              margin-top: -8rem;
+
+              &::-webkit-scrollbar {
+                width: 10px;
+                background-color: transparent;
+              }
+
+              span {
+                font-family: "Space Grotesk Old", Arial, sans-serif;
+                font-size: 58px;
+                font-weight: 600;
+                line-height: 72.5px;
+                position: relative;
+                display: inline;
+                list-style: outside none none;
+                box-sizing: border-box;
+                text-rendering: optimizelegibility;
+                color: var(--transparent-light-1);
+                transform: scale(0.8);
+                transition: 0.3s linear all;
+                &.active {
+                  transform: scale(1);
+                  color: var(--cp6-light);
+                  transition: 0.3s linear all;
+                }
+              }
+            }
+          }
+        }
+        .bot {
+          margin-top: 3rem;
+          .inner-bot {
+            .items {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              column-gap: 40px;
+              .item {
+                font-size: 21px;
+                font-weight: 500;
+                line-height: 27px;
+                background-image: linear-gradient(
+                  to right,
+                  rgba(255, 255, 255, 0.08),
+                  rgba(0, 0, 0, 0)
+                );
+                display: flex;
+                text-rendering: optimizelegibility;
+                border-radius: 500px;
+
+                div {
+                  width: 20px;
+                  margin-right: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+#what {
+  .inner-section {
+    .container {
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .top {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          h2 {
+            width: 50%;
+          }
+        }
+        .bot {
+          .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            .card {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              row-gap: 10px;
+              p {
+                margin: 0;
+              }
+              .icon {
+                width: 30px;
+                height: 30px;
+                font-size: 30px;
+                i {
+                  color: cornflowerblue;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

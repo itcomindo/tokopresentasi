@@ -1,0 +1,44 @@
+#testimonial-2 {
+  .inner-section {
+    .container {
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        .left {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .photo {
+            width: 200px;
+            height: 200px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 50%;
+              filter: grayscale(100%);
+              transition: 0.3s linear all;
+            }
+          }
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          h3 {
+            font-size: 34px;
+            font-weight: 500;
+            line-height: 38px;
+            box-sizing: border-box;
+            text-rendering: optimizelegibility;
+          }
+          .icons {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

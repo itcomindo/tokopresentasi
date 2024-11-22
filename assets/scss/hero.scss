@@ -1,0 +1,65 @@
+#hero {
+  margin-top: -100px;
+  .inner-section {
+    height: 100%;
+    padding-top: 200px;
+    .container {
+      height: 100%;
+      .wrapper {
+        height: 100%;
+        .items {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          row-gap: 20px;
+          padding-top: 100px;
+          padding-bottom: 100px;
+          .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .top {
+            h1 {
+              width: 75%;
+            }
+          }
+          .mid {
+            row-gap: 20px;
+            p {
+              margin: 6px 0;
+              width: 75%;
+              font-size: 21px;
+              font-weight: 500;
+              line-height: 27px;
+              text-align: center;
+              box-sizing: border-box;
+              text-rendering: optimizelegibility;
+            }
+            .buttons {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              gap: 20px;
+            }
+          }
+          .bot {
+            ul {
+              display: flex;
+              flex-direction: row;
+              gap: 40px;
+              li {
+                i {
+                  color: blueviolet;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
