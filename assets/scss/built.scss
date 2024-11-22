@@ -6,6 +6,7 @@
   row-gap: 20px;
   padding-left: 0;
   padding-right: 0;
+
   .inner-section {
     .container {
       .wrapper {
@@ -60,6 +61,16 @@
         display: flex;
         white-space: nowrap;
 
+        @media (max-width: 840px) {
+          display: -webkit-box;
+        }
+
+        &:nth-child(1) {
+          @media (max-width: 840px) {
+            display: none;
+          }
+        }
+
         .item {
           background-color: var(--color-dark-2);
           width: 270px;
@@ -69,6 +80,12 @@
           border-radius: 8px;
           position: relative;
           overflow: hidden;
+          @media (max-width: 840px) {
+            width: 150px;
+            padding: 8px 10px !important;
+            font-size: 80% !important;
+            margin: 0 10px;
+          }
         }
       }
     }
@@ -76,6 +93,7 @@
 
   #sosmed {
     .container {
+      padding: 0 20px;
       .wrapper {
         .photo {
           img {

@@ -1,4 +1,6 @@
 #showcases {
+  padding-left: 0;
+  padding-right: 0;
   .inner-section {
     // row-1.
     &.row-1 {
@@ -19,12 +21,33 @@
     // row-2.
     &.row-2 {
       height: 557px;
+
+      @media (max-width: 1440px) {
+        height: 400px;
+      }
+
+      @media (max-width: 1024px) {
+        height: 300px;
+      }
+
+      @media (max-width: 840px) {
+        height: 250px;
+      }
+
+      @media (max-width: 540px) {
+        height: 200px;
+      }
+
       .items {
         height: 100%;
         display: flex;
         flex-direction: row;
         padding-left: 10rem;
         position: relative;
+
+        @media (max-width: 991px) {
+          padding-left: 0;
+        }
 
         .flickity-button {
           position: absolute;
@@ -44,8 +67,19 @@
         .item {
           width: calc(100% / 2);
           aspect-ratio: 16/9;
-          margin: 0 60px;
+          margin: 0 20px;
           height: 100%;
+
+          @media (max-width: 1025px) {
+            width: calc(100% / 3 - 20px);
+            margin: 0 10px;
+          }
+
+          @media (max-width: 540px) {
+            width: calc(100% / 2 - 20px);
+            margin: 0 10px;
+          }
+
           img {
             width: 100%;
             height: 100%;

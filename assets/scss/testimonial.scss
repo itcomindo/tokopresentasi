@@ -1,10 +1,13 @@
-#testimonial {
+.testimonial {
   .inner-section {
     .container {
       .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
+        @media (max-width: 767px) {
+          grid-template-columns: 1fr;
+        }
         .left {
           display: flex;
           flex-direction: column;
@@ -32,10 +35,24 @@
             line-height: 38px;
             box-sizing: border-box;
             text-rendering: optimizelegibility;
+            @media (max-width: 767px) {
+              font-size: var(--font-clamp-3);
+              text-align: center;
+            }
           }
           .icons {
             display: flex;
             flex-direction: column;
+            @media (max-width: 767px) {
+              align-items: center;
+            }
+            .icon {
+              @media (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+            }
           }
         }
       }

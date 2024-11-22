@@ -13,10 +13,16 @@
             text-align: center;
             h2 {
               width: 50%;
+              @media (max-width: 991px) {
+                width: 100%;
+              }
             }
             p {
               width: 50%;
               font-size: 110%;
+              @media (max-width: 991px) {
+                width: 100%;
+              }
             }
           }
         }
@@ -26,28 +32,46 @@
               display: grid;
               grid-template-columns: repeat(3, 1fr);
               gap: 20px;
+
+              @media (max-width: 540px) {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+              }
+
               .item {
                 display: flex;
                 flex-direction: column;
                 position: relative;
                 padding: 60px 20px;
                 background-color: var(--color-light-4);
-                h3 {
-                  font-size: 33px;
-                  font-weight: 600;
-                  line-height: 40px;
-                  box-sizing: border-box;
-                  text-rendering: optimizelegibility;
-                  margin: 8px 0;
+
+                @media (max-width: 540px) {
+                  width: calc(100% / 2 - 40px);
+                  flex-grow: 1;
                 }
+
+                @media (max-width: 384px) {
+                  width: calc(100% - 40px);
+                }
+
                 p {
                   width: 50%;
+                  @media (max-width: 840px) {
+                    width: 75%;
+                  }
                 }
                 .icon {
                   width: 100px;
                   position: absolute;
                   bottom: 1rem;
                   right: 1rem;
+                  @media (max-width: 991px) {
+                    width: 75px;
+                  }
+                  @media (max-width: 540px) {
+                    width: 50px;
+                  }
                   img {
                     width: 100%;
                     height: auto;

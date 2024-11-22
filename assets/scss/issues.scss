@@ -13,14 +13,22 @@
         }
         .top {
           width: 70%;
+          @media (max-width: 1365px) {
+            width: 100%;
+          }
           h2 {
-            color: var(--color-light-4);
             font-size: 58px;
             font-weight: 600;
             line-height: 64px;
             position: relative;
             box-sizing: border-box;
             text-rendering: optimizelegibility;
+            @media (max-width: 1365px) {
+              margin: 8px 0;
+            }
+            @media (max-width: 991px) {
+              font-size: var(--font-clamp-6);
+            }
           }
         }
         .mid {
@@ -28,10 +36,19 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+
+            @media (max-width: 1365px) {
+              display: flex;
+              flex-direction: column;
+            }
+
             .left {
               display: flex;
               flex-direction: column;
               gap: 20px;
+              @media (max-width: 1365px) {
+                order: 2;
+              }
             }
             .right {
               display: flex;
@@ -40,13 +57,12 @@
               overflow: hidden;
               margin-top: -8rem;
 
-              &::-webkit-scrollbar {
-                width: 10px;
-                background-color: transparent;
+              @media (max-width: 1365px) {
+                order: 1;
+                margin-top: unset;
               }
 
               span {
-                font-family: "Space Grotesk Old", Arial, sans-serif;
                 font-size: 58px;
                 font-weight: 600;
                 line-height: 72.5px;
@@ -75,16 +91,24 @@
               flex-direction: row;
               justify-content: center;
               column-gap: 40px;
+              @media (max-width: 1365px) {
+                flex-wrap: wrap;
+                gap: 20px;
+              }
               .item {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 8px;
                 font-size: 21px;
-                font-weight: 500;
-                line-height: 27px;
+                // font-weight: 500;
+                // line-height: 27px;
                 background-image: linear-gradient(
                   to right,
                   rgba(255, 255, 255, 0.08),
                   rgba(0, 0, 0, 0)
                 );
                 display: flex;
+                align-items: center;
                 text-rendering: optimizelegibility;
                 border-radius: 500px;
 

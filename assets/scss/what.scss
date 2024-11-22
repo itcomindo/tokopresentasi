@@ -19,11 +19,29 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
+
+            @media (max-width: 640px) {
+              grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: 384px) {
+              grid-template-columns: 1fr;
+            }
+
             .card {
               position: relative;
               display: flex;
               flex-direction: column;
               row-gap: 10px;
+              &:last-child {
+                @media (max-width: 640px) {
+                  display: grid;
+                  grid-column: span 2;
+                }
+                @media (max-width: 384px) {
+                  grid-column: span 1;
+                }
+              }
               p {
                 margin: 0;
               }

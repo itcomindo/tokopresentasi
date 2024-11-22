@@ -16,18 +16,23 @@ defined('ABSPATH') || die('No script kiddies please!');
                 <div class="items">
                     <div class="left">Logo</div>
                     <div class="mid">
-                        <ul class="list-no-style horizontal">
-                            <li><a href="#">Showcase</a></li>
-                            <li><a href="#">Talent</a></li>
-                            <li><a href="#">Scope</a></li>
-                            <li><a href="#">Pricing</a></li>
-                        </ul>
+                        <nav id="header-menu">
+                            <ul class="list-no-style horizontal">
+                                <li><a href="#">Showcase</a></li>
+                                <li><a href="#">Talent</a></li>
+                                <li><a href="#">Scope</a></li>
+                                <li><a href="#">Pricing</a></li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="right">
                         <div class="inner">
                             <a href="#" class="btn light normal">Apply as a Talent</a>
                             <a href="#" class="btn dark normal">Book a Call</a>
                         </div>
+                        <?php
+                        get_template_part('parts/part', 'bars');
+                        ?>
                     </div>
                 </div>
             </div>

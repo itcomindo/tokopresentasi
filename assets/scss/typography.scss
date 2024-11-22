@@ -102,12 +102,16 @@ a {
     font-weight: 600;
     line-height: 64px;
     margin: 8px;
+    @media (max-width: 991px) {
+      font-size: var(--font-clamp-5);
+      line-height: 1.2;
+    }
   }
   &.head-secondary {
     font-size: 32px;
     font-weight: 700;
     line-height: 42px;
-    margin: 8px;
+    margin: 8px 0;
   }
   &.head-card {
     margin: 8px 0;

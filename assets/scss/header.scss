@@ -1,8 +1,9 @@
 #header {
   position: fixed;
-  top: 50px;
   height: 100px;
   z-index: 88;
+  top: 50px;
+  left: 0;
   .inner-section {
     height: 100%;
     .container {
@@ -34,14 +35,89 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            ul {
-              margin: 0;
-              padding: 0;
+            transition: 0.3s linear all;
+
+            @media (max-width: 840px) {
+              background-color: var(--color-light-3);
+              top: 0;
+              left: 50%;
+              width: calc(100% - 40px);
+              height: auto;
+              position: fixed;
+              border-radius: 7px;
+              transform: translate(-50%, -100%);
+              opacity: 0;
+              transition: 0.3s linear all;
+
+              &.active {
+                opacity: 1;
+                top: 140px;
+                transform: translate(-50%, 0);
+              }
+
+              &:after {
+                --ww: 10px;
+                content: "";
+                position: absolute;
+                top: -20px;
+                right: 10px;
+                border-top: var(--ww) solid transparent;
+                border-right: var(--ww) solid transparent;
+                border-bottom: var(--ww) solid var(--color-light-3);
+                border-left: var(--ww) solid transparent;
+              }
+            }
+
+            nav {
+              width: 100%;
               box-sizing: border-box;
               display: flex;
-              flex-direction: row;
-              gap: 40px;
-              font-weight: 700;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              flex-grow: 1;
+              @media (max-width: 840px) {
+                padding: 20px;
+                justify-content: flex-start;
+                align-items: flex-start;
+              }
+              ul {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+                font-weight: 700;
+                @media (max-width: 840px) {
+                  flex-direction: column;
+                  gap: 20px;
+                }
+              }
+              .inner {
+                @media (max-width: 540px) {
+                  margin-top: 20px;
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  box-sizing: border-box;
+                  gap: 20px;
+                  a.btn {
+                    box-sizing: border-box;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 8px;
+                    text-align: center;
+                    border-radius: 7px;
+                    &.light {
+                      border: 1px solid var(--color-dark-1);
+                    }
+                  }
+                }
+              }
             }
           }
           .right {
@@ -52,6 +128,51 @@
             flex-direction: column;
             justify-content: center;
             width: 350px;
+
+            @media (max-width: 840px) {
+              flex-direction: row;
+              justify-content: flex-end;
+              align-items: center;
+              flex-grow: 1;
+            }
+
+            @media (max-width: 540px) {
+              width: auto;
+              flex-grow: 1;
+            }
+
+            .bars {
+              display: none;
+              @media (max-width: 840px) {
+                width: 24px;
+                height: 18px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                span {
+                  position: absolute;
+                  height: 2px;
+                  background-color: var(--color-dark-1);
+
+                  &:nth-child(1) {
+                    width: 100%;
+                    top: 0;
+                  }
+
+                  &:nth-child(2) {
+                    width: 75%;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                  }
+
+                  &:nth-child(3) {
+                    width: 100%;
+                    bottom: 0;
+                  }
+                }
+              }
+            }
             .inner {
               display: flex;
               flex-direction: row;
@@ -62,10 +183,17 @@
                   border-radius: 7px;
                 }
               }
+              @media (max-width: 840px) {
+                justify-content: flex-end;
+                padding-right: 20px;
+              }
             }
           }
         }
       }
     }
+  }
+  @media (max-width: 840px) {
+    top: 20px;
   }
 }

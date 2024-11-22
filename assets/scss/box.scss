@@ -47,6 +47,11 @@ section.dummy-section {
   padding-top: 7rem;
   padding-bottom: 7rem;
 
+  @media (max-width: 991px) {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   @media (max-width: 540px) {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -63,8 +68,7 @@ section.dummy-section {
 }
 
 .inner-section {
-  min-width: 100%;
-  min-width: 1903px;
+  width: 1903px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -78,6 +82,7 @@ section.dummy-section {
 .wrapper {
   width: 100%;
   max-width: 100%;
+  margin: 0 auto;
 }
 
 .flex-col {
