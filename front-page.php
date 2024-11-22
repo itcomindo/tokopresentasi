@@ -22,5 +22,6 @@ tps_testimonial('testi-person-2.png');
 get_template_part('parts/sections/section', 'showcase');
 get_template_part('parts/sections/section', 'what');
 tps_testimonial('testi-person-3.png');
+get_template_part('parts/sections/section', 'cta');
 
 get_footer();

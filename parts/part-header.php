@@ -14,7 +14,11 @@ defined('ABSPATH') || die('No script kiddies please!');
         <div class="container">
             <div class="wrapper">
                 <div class="items">
-                    <div class="left">Logo</div>
+                    <div class="left">
+                        <div class="logo">
+                            <a href="/"><img src="<?php echo tps_logo(); ?>" alt="Showcase" title="Showcase"></a>
+                        </div>
+                    </div>
                     <div class="mid">
                         <nav id="header-menu">
                             <ul class="list-no-style horizontal">

@@ -13,6 +13,11 @@ wp_footer();
 
 </main>
 
+
+<?php
+get_template_part('parts/sections/section', 'footer');
+?>
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {},

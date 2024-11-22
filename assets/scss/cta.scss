@@ -1,0 +1,47 @@
+#cta {
+  .inner-section {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .wrapper {
+        width: 840px;
+        background-color: var(--cp4-light);
+        color: var(--color-light-4);
+        padding: 40px;
+        border-radius: 10px;
+        .items {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            h2 {
+              font-size: var(--font-clamp-4);
+            }
+            .photo {
+              width: 200px;
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+            .btn {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: center;
+              .dark {
+                border-radius: 7px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

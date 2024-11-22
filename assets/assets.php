@@ -96,3 +96,12 @@ function mm_add_defer_attribute($tag, $handle)
 
 // Uncomment the line below to enable defer attribute for specific scripts.
 // add_filter( 'script_loader_tag', 'mm_add_defer_attribute', 10, 2 );.
+
+
+
+
+function tps_logo()
+{
+	$logo = THEME_URI . '/assets/images/naga.webp';
+	return $logo;
+}
