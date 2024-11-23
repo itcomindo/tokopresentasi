@@ -30,6 +30,11 @@
             @media (max-width: 991px) {
               font-size: var(--font-clamp-6);
             }
+            @media (max-width: 768px) {
+              font-size: var(--font-clamp-4);
+              margin: 4px 0;
+              line-height: 1.5;
+            }
           }
         }
         .mid {
@@ -79,6 +84,11 @@
                   transform: scale(1);
                   color: var(--cp6-light);
                   transition: 0.3s linear all;
+                }
+                @media (max-width: 991px) {
+                  font-size: var(--font-clamp-5);
+                  line-height: 1.5;
+                  margin: 4px 0;
                 }
               }
             }

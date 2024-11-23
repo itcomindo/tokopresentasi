@@ -127,7 +127,8 @@
                       }
                     }
                   }
-                  &:hover {
+                  // item 1 hover.
+                  &.active {
                     background-color: var(--cp4-light);
                     color: var(--color-light-4);
                     .icon {
@@ -192,7 +193,7 @@
                 }
 
                 // item 2 hover.
-                &:hover {
+                &.active {
                   background-color: var(--cp4-light);
                   color: var(--color-light-4);
                   .icon {
@@ -259,7 +260,7 @@
                   }
                 }
                 // item 3 hover.
-                &:hover {
+                &.active {
                   background-color: var(--cp4-light);
                   color: var(--color-light-4);
                   .photos {
@@ -304,7 +305,7 @@
                 }
 
                 // item 4 hover.
-                &:hover {
+                &.active {
                   background-color: var(--cp4-light);
                   color: var(--color-light-4);
                   .photos {
