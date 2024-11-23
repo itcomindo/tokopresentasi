@@ -47,3 +47,12 @@ define('THEME_VERSION', wp_get_theme()->get('Version'));
 // Call Themes Files.
 require_once get_template_directory() . '/assets/assets.php';
 require_once get_template_directory() . '/parts/parts.php';
+
+
+
+// Append meta name description to the head.
+function tps_meta_description()
+{
+    echo '<meta name="description" content="Affordable Recuiting & Delivery Platform for Top Remote Talent Around the world">';
+}
+add_action('wp_head', 'tps_meta_description', 1);
