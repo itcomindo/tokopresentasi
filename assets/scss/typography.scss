@@ -119,4 +119,19 @@ a {
     font-weight: 600;
     line-height: 25px;
   }
+  &.lw50mw75sw100 {
+    width: 50%;
+    @media (max-width: 991px) {
+      width: 75%;
+    }
+    @media (max-width: 640px) {
+      width: 100%;
+    }
+  }
+  &.lw75sw100 {
+    width: 75%;
+    @media (max-width: 640px) {
+      width: 100%;
+    }
+  }
 }

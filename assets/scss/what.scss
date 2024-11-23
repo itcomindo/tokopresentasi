@@ -10,12 +10,6 @@
           flex-direction: column;
           align-items: center;
           text-align: center;
-          h2 {
-            width: 50%;
-            @media (max-width: 640px) {
-              width: 100%;
-            }
-          }
         }
         .bot {
           .cards {

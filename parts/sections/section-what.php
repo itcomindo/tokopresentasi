@@ -15,7 +15,7 @@ defined('ABSPATH') || die('No script kiddies please!');
         <div class="container">
             <div class="wrapper">
                 <div class="top">
-                    <h2 class="head head-section">What You Get From Toko Presentasi</h2>
+                    <h2 class="head head-section lw75sw100">What You Get From Toko Presentasi</h2>
                     <p>Meet your new team members minus the Recruiting, HR, Operations, and Admin work.</p>
                 </div>
 

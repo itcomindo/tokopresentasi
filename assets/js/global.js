@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                     e.stopPropagation();
                     jQuery(this).toggleClass('active');
                     jQuery('#header .mid').toggleClass('active');
+                    jQuery('#header .inner-section .container .wrapper .items .mid nav .inner').addClass('active');
                 });
 
                 // Menutup menu jika klik elemen #header .mid
@@ -17,12 +18,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
                     e.stopPropagation();
                     jQuery('.trigger').removeClass('active');
                     jQuery(this).removeClass('active');
+                    jQuery('#header .inner-section .container .wrapper .items .mid nav .inner').removeClass('active');
                 });
 
                 // Menutup menu jika klik sembarang tempat di luar menu
                 jQuery(document).on('click', function () {
                     jQuery('.trigger').removeClass('active');
                     jQuery('#header .mid').removeClass('active');
+                    jQuery('#header .inner-section .container .wrapper .items .mid nav .inner').removeClass('active');
                 });
             }
         }

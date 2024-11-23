@@ -13,7 +13,7 @@ defined('ABSPATH') || die('No script kiddies please!');
     <div class="inner-section">
         <div class="container">
             <div class="wrapper">
-                <h2 class="head head-section">Build Whatever You Want, With the Tools You Love</h2>
+                <h2 class="head head-section lw75sw100">Build Whatever You Want, With the Tools You Love</h2>
             </div>
         </div>
     </div>

@@ -15,7 +15,7 @@ defined('ABSPATH') || die('No script kiddies please!');
         <div class="container">
             <div class="wrapper">
                 <div class="top">
-                    <h2 class="head head-section">Creative Talent Recruiting Made <span>Super</span></h2>
+                    <h2 class="head head-section lw50mw75sw100">Creative Talent Recruiting Made <span>Super</span></h2>
                     <p>We work as an extension of your in-house team and assemble the right team members for every
                         task and project.</p>
                 </div>

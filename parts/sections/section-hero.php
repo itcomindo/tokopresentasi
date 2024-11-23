@@ -16,7 +16,7 @@ defined('ABSPATH') || die('No script kiddies please!');
             <div class="wrapper">
                 <div class="items">
                     <div class="top col">
-                        <h1 class="head head-section">Hire Your Whole Design & Dev Team With a Few Clicks</h1>
+                        <h1 class="head head-section lw50mw75sw100">Hire Your Whole Design & Dev Team With a Few Clicks</h1>
                     </div>
                     <div class="mid col">
                         <p>Get on-demand access to your own team of designers, developers & project managers
