@@ -24,14 +24,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             }
         }
         moveHeaderInner();
-
-
-
-
-
         // move header inner to nav end.
-
-
 
 
         function group1() {

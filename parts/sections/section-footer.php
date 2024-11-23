@@ -13,9 +13,15 @@ defined('ABSPATH') || die('No script kiddies please!');
 <footer id="footer" class="section section-high">
     <div class="inner-section">
         <div class="container">
+            <div class="icon">
+                <img src="<?php echo THEME_URI . '/assets/images/icon-5.svg'; ?>" alt="Design" title="Design">
+                <img src="<?php echo THEME_URI . '/assets/images/icon-4.svg'; ?>" alt="Design" title="Design">
+
+            </div>
             <div class="wrapper">
                 <div class="top">
                     <h2 class="head head-section">Recuiting & Delivery Platform for Top Remote Talent</h2>
+                    <div class="icon"><img src="<?php echo THEME_URI . '/assets/images/icon-6.svg'; ?>" alt="Design" title="Design"></div>
                 </div>
                 <div class="bot">
                     <div class="inner">

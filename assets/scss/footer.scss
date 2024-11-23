@@ -3,6 +3,24 @@
   color: var(--color-light-4);
   .inner-section {
     .container {
+      position: relative;
+      .icon {
+        position: absolute;
+        width: 300px;
+        top: -5rem;
+        left: -40px;
+        img {
+          &:nth-child(2) {
+            position: absolute;
+            top: 6rem;
+            left: 0;
+            @media (max-width: 1366px) {
+              top: 4rem;
+              left: 2rem;
+            }
+          }
+        }
+      }
       .wrapper {
         display: flex;
         flex-direction: column;
@@ -12,6 +30,18 @@
           flex-direction: column;
           align-items: flex-start;
           text-align: left;
+          position: relative;
+          .icon {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 7rem;
+            left: 37rem;
+            @media (max-width: 991px) {
+              top: 9rem;
+              left: 20rem;
+            }
+          }
           h2 {
             width: 75%;
             @media (max-width: 1024px) {
@@ -101,6 +131,9 @@
                         width: 100%;
                         display: block;
                         color: var(--color-light-4);
+                        &:hover {
+                          color: var(--cp6-light);
+                        }
                       }
                     }
                     &.icons {
@@ -155,6 +188,9 @@
               li {
                 a {
                   color: var(--color-light-4);
+                  &:hover {
+                    color: var(--cp6-light);
+                  }
                 }
               }
             }

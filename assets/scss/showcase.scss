@@ -49,17 +49,28 @@
           padding-left: 0;
         }
 
+        @media (max-width: 640px) {
+          overflow: visible;
+        }
+
         .flickity-button {
           position: absolute;
           top: -7rem;
           right: 20rem;
           background: transparent;
+          @media (max-width: 1440px) {
+            top: -5rem;
+            right: 5rem;
+          }
           &.flickity-prev-next-button {
             width: 20px;
             height: 20px;
             &.previous {
               left: unset;
               right: 25rem;
+              @media (max-width: 1440px) {
+                right: 10rem;
+              }
             }
           }
         }
@@ -103,6 +114,21 @@
               border-radius: 50%;
               font-size: 150%;
               text-align: center;
+            }
+          }
+        }
+
+        .flickity-page-dots {
+          @media (max-width: 1024px) {
+            bottom: -40px;
+            .dot {
+              width: 15px;
+              height: 15px;
+              border-radius: unset;
+              &.is-selected {
+                width: 30px;
+                background-color: var(--cp4-dark);
+              }
             }
           }
         }

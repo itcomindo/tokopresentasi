@@ -25,8 +25,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
                     contain: true,
                     wrapAround: false,
                     autoPlay: false,
-                    prevNextButtons: true,
-                    pageDots: false,
+                    prevNextButtons: false,
+                    pageDots: true,
                     draggable: true,
                 });
             }
