@@ -4,14 +4,30 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
         // Call header menu start.
         function callHeaderMenu() {
-            $screenWidth = jQuery(window).width();
+            var $screenWidth = jQuery(window).width();
             if ($screenWidth < 841) {
-                jQuery('.trigger').on('click', function () {
+                jQuery('.trigger').on('click', function (e) {
+                    e.stopPropagation();
+                    jQuery(this).toggleClass('active');
                     jQuery('#header .mid').toggleClass('active');
+                });
+
+                // Menutup menu jika klik elemen #header .mid
+                jQuery('#header .mid').on('click', function (e) {
+                    e.stopPropagation();
+                    jQuery('.trigger').removeClass('active');
+                    jQuery(this).removeClass('active');
+                });
+
+                // Menutup menu jika klik sembarang tempat di luar menu
+                jQuery(document).on('click', function () {
+                    jQuery('.trigger').removeClass('active');
+                    jQuery('#header .mid').removeClass('active');
                 });
             }
         }
         callHeaderMenu();
+
         // Call header menu end.
 
         // move header inner to nav start.
