@@ -1,0 +1,67 @@
+#x2 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  opacity: 0.5;
+  transform: rotate(-3deg);
+
+  @media (max-width: 1650px) {
+    overflow: hidden;
+  }
+
+  .inner-section {
+    display: flex;
+    background-color: #f8f8f8;
+    border-top: 2px solid #121212;
+    border-bottom: 2px solid #121212;
+    height: 68px;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 10px var(--transparent-dark-2) inset;
+
+    .groups {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      animation: scroll-right 40s linear infinite;
+
+      .items {
+        display: flex;
+        gap: 40px;
+
+        &:nth-child(2) {
+          .item {
+            &:first-child {
+              padding-right: 30rem;
+              padding-left: 30rem;
+            }
+          }
+        }
+
+        .item {
+          white-space: nowrap;
+        }
+
+        .icon {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+
+          i {
+            color: var(--transparent-dark-3);
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%); // Mulai dari luar layar kiri
+  }
+  100% {
+    transform: translateX(0); // Berhenti di posisi awal
+  }
+}

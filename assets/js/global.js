@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
         function group1() {
-            var $carousel = jQuery('.groups');
+            var $carousel = jQuery('#staff .groups');
             var scrollSpeed = 1;
             var scrollPos = $carousel[0].scrollWidth / 2;
             $carousel.append($carousel.html());

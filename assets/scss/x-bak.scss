@@ -1,0 +1,41 @@
+#x1 {
+  width: 100%;
+  position: relative;
+  .inner-section {
+    background-color: #f8f8f8;
+    border-top: 2px solid #121212;
+    border-bottom: 2px solid #121212;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 130%;
+    height: 68px;
+    position: absolute;
+    transform: rotate(5.52deg);
+    left: 0;
+    .groups {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2703px;
+      height: 100%;
+      .items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        gap: 40px;
+        .icon {
+          width: 40px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          i {
+            color: var(--cp4-dark);
+          }
+        }
+      }
+    }
+  }
+}

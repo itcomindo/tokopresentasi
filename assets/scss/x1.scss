@@ -1,0 +1,120 @@
+#x1 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transform: rotate(5deg);
+
+  @media (max-width: 1650px) {
+    overflow: hidden;
+    background-color: darkcyan;
+  }
+
+  .inner-section {
+    display: flex;
+    background-color: #f8f8f8;
+    border-top: 2px solid #121212;
+    border-bottom: 2px solid #121212;
+    height: 68px;
+    align-items: center;
+    position: relative;
+    // transform: rotate(5deg);
+    box-shadow: 0 0 10px var(--transparent-dark-2) inset;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -10px;
+      width: 300px;
+      height: 68px;
+      background: linear-gradient(90deg, #ddd, transparent);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -20px;
+      width: 300px;
+      height: 68px;
+      background: linear-gradient(90deg, transparent, #ddd);
+    }
+
+    .groups {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      animation: scroll-left 40s linear infinite;
+
+      .items {
+        display: flex;
+        gap: 40px;
+
+        &:nth-child(2) {
+          .item {
+            &:first-child {
+              padding-left: 30rem;
+            }
+          }
+        }
+
+        .item {
+          white-space: nowrap;
+        }
+
+        .icon {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          font-size: 120%;
+          &:nth-child(2) {
+            i {
+              color: var(--cp6-dark);
+            }
+          }
+          &:nth-child(4) {
+            i {
+              color: darkred;
+            }
+          }
+          &:nth-child(6) {
+            i {
+              color: var(--cp4-dark);
+            }
+          }
+          &:nth-child(8) {
+            i {
+              color: var(--color-dark-2);
+            }
+          }
+          &:nth-child(10) {
+            i {
+              color: var(--cp2-light);
+            }
+          }
+          &:nth-child(12) {
+            i {
+              color: var(--cp5-light);
+            }
+          }
+          &:nth-child(14) {
+            i {
+              color: var(--cp4-dark);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

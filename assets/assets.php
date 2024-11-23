@@ -69,6 +69,9 @@ function mm_load_scripts_and_libs()
 
 	//showcase.min.js.
 	wp_enqueue_script('showcase-js', get_template_directory_uri() . '/assets/js/showcase.min.js', array('jquery'), THEME_VERSION, true);
+
+	// X.js.
+	wp_enqueue_script('x-js', get_template_directory_uri() . '/assets/js/x.min.js', array('jquery'), THEME_VERSION, true);
 }
 add_action('wp_enqueue_scripts', 'mm_load_scripts_and_libs', 1);
 
