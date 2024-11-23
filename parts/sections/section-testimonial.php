@@ -16,10 +16,10 @@ defined('ABSPATH') || die('No script kiddies please!');
  * @param string $element_id is id of element e.g testimonial.
  * @param string $photo_name is file name of photo e.g testi-person-1.png. 
  */
-function tps_testimonial($photo_name = 'testi-person-1.png')
+function tps_testimonial($element_id = '', $photo_name = 'testi-person-1.png')
 {
 ?>
-    <section class="testimonial section section-high">
+    <section id="<?php echo esc_html($element_id); ?>" class="testimonial section section-high">
         <div class="inner-section">
             <div class="container">
                 <div class="wrapper">

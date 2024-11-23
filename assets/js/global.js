@@ -69,6 +69,53 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+        //GSAP Start.
+        gsap.registerPlugin(ScrollTrigger);
+        function gsap1() {
+            gsap.to('#issues', {
+                background: '#121212',
+                scrollTrigger: {
+                    trigger: '#teaser',
+                    start: 'bottom+=5rem center',
+                    end: 'bottom+=5rem center',
+                    toggleActions: 'play none reverse none',
+                }
+            });
+            ScrollTrigger.create({
+                trigger: '#issues',
+                start: 'bottom+=100 top',
+                onLeave: () => gsap.to('#issues', { background: '' }),
+                onEnterBack: () => gsap.to('#issues', { background: '#121212' }),
+            });
+        }
+        gsap1();
+
+
+        function gsap2() {
+            gsap.to('#testi-1', {
+                background: '#121212',
+                scrollTrigger: {
+                    trigger: '#cards',
+                    start: 'bottom+=5rem center',
+                    end: 'bottom+=5rem center',
+                    toggleActions: 'play none reverse none',
+                }
+            });
+            ScrollTrigger.create({
+                trigger: '#cards',
+                start: 'bottom+=100 top',
+                onLeave: () => gsap.to('#testi-1', { background: '' }),
+                onEnterBack: () => gsap.to('#testi-1', { background: '#121212' }),
+            });
+        }
+        gsap2();
+
+
+        //GSAP End.
+
+
+
+
 
 
 

@@ -51,6 +51,12 @@ function mm_load_scripts_and_libs()
 	// Load flickity js.
 	wp_enqueue_script('flickity-js', get_template_directory_uri() . '/assets/js/flickity.min.js', array('jquery'), THEME_VERSION, true);
 
+	// GSAP Core.
+	wp_enqueue_script('gsap-core', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), '3.12.5', true);
+
+	// GSAP ScrollTrigger.
+	wp_enqueue_script('gsap-scrolltrigger', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', array(), '3.12.5', true);
+
 
 	// Load global js.
 	wp_enqueue_script('global-js', get_template_directory_uri() . '/assets/js/global.min.js', array('jquery'), THEME_VERSION, true);

@@ -8,6 +8,21 @@
 
 defined('ABSPATH') || die('No script kiddies please!');
 
+/**
+ * Check if the current environment is development mode or on production
+ * development mode is when the server is localhost
+ * output: boolean
+ */
+function tps_is_devmode()
+{
+    if (isset($_SERVER['REMOTE_ADDR']) && in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'), true)) {
+        return true;
+    }
+    return false;
+}
+
+
+
 // Disable gutenberg.
 add_filter('use_block_editor_for_post', '__return_false', 10);
 

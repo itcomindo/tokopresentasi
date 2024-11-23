@@ -1729,7 +1729,7 @@ a.btn.borad-7 {
 }
 
 #issues {
-  background-color: var(--color-dark-1);
+  background-color: var(--color-light-3);
   color: var(--color-light-1);
 }
 #issues .inner-section .container .wrapper {
@@ -2010,6 +2010,10 @@ a.btn.borad-7 {
 #cards .inner-section .container .wrapper .bot .bot-inner .items .item .icon img {
   width: 100%;
   height: auto;
+}
+
+#testi-1 {
+  color: var(--color-light-1);
 }
 
 .testimonial .inner-section .container .wrapper {
