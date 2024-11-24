@@ -8,6 +8,10 @@
 
 defined('ABSPATH') || die('No script kiddies please!');
 
+
+require_once THEME_PATH . '/inc/menus.php';
+
+
 // Yano Customizers.
 require_once THEME_PATH . '/inc/theme-customizer/theme-customizer.php';
 

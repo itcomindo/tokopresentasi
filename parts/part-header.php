@@ -20,14 +20,9 @@ defined('ABSPATH') || die('No script kiddies please!');
                         </div>
                     </div>
                     <div class="mid">
-                        <nav id="header-menu">
-                            <ul class="list-no-style horizontal">
-                                <li><a href="#">Showcase</a></li>
-                                <li><a href="#">Talent</a></li>
-                                <li><a href="#">Scope</a></li>
-                                <li><a href="#">Pricing</a></li>
-                            </ul>
-                        </nav>
+                        <?php
+                        tps_display_menu('header', 'header-menu', 'horizontal');
+                        ?>
                     </div>
                     <div class="right">
                         <div class="inner">
