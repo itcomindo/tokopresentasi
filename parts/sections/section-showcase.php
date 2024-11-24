@@ -23,19 +23,19 @@ defined('ABSPATH') || die('No script kiddies please!');
     <div id="slides" class="inner-section row-2">
         <div class="items">
             <!-- Slide 1 -->
-            <div class="item"><img src="<?php echo THEME_URI . '/assets/images/slide-1.png' ?>" alt=""></div>
+            <div class="item"><img src="<?php echo THEME_URI . '/assets/images/slide-1.png' ?>" alt="showcase"></div>
 
             <!-- Slide 2 -->
-            <div class="item"><img src="<?php echo THEME_URI . '/assets/images/slide-2.png' ?>" alt=""></div>
+            <div class="item"><img src="<?php echo THEME_URI . '/assets/images/slide-2.png' ?>" alt="showcase"></div>
 
             <!-- Slide 3 -->
-            <div class="item"><img src="<?php echo THEME_URI . '/assets/images/slide-3.png' ?>" alt=""></div>
+            <div class="item"><img src="<?php echo THEME_URI . '/assets/images/slide-3.png' ?>" alt="showcase"></div>
 
             <!-- Slide 4 -->
-            <div class="item"><img src="<?php echo THEME_URI . '/assets/images/slide-4.png' ?>" alt=""></div>
+            <div class="item"><img src="<?php echo THEME_URI . '/assets/images/slide-4.png' ?>" alt="showcase"></div>
 
             <!-- Slide 5 -->
-            <div class="item"><img src="<?php echo THEME_URI . '/assets/images/slide-5.png' ?>" alt=""></div>
+            <div class="item"><img src="<?php echo THEME_URI . '/assets/images/slide-5.png' ?>" alt="showcase"></div>
 
             <!-- Slide 6 -->
             <div class="item">

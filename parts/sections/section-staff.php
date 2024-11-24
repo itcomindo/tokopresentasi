@@ -21,7 +21,7 @@ function tps_staff()
                 $staff_position = $staff['staff_position'];
             ?>
                 <div class="item">
-                    <img src="<?php echo esc_html($staff_image); ?>" alt="<?php echo esc_html($staff_name); ?>">
+                    <img class="ft" src="<?php echo esc_html($staff_image); ?>" alt="<?php echo esc_html($staff_name); ?>" title="<?php echo esc_html($staff_name); ?>">
                     <div class="box"><span><?php echo esc_html($staff_name); ?></span><span><?php echo esc_html($staff_position); ?></span></div>
                 </div>
             <?php

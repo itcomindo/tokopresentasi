@@ -30,7 +30,7 @@ defined('ABSPATH') || die('No script kiddies please!');
                                 <h3 class="head head-card">Subscribe</h3>
                                 <p>to a plan & request your first project or task.</p>
                                 <div class="icon">
-                                    <img src="<?php echo THEME_URI . '/assets/images/icon-1.svg'; ?>" alt="">
+                                    <img class="ft" src="<?php echo THEME_URI . '/assets/images/icon-1.svg'; ?>" alt="">
                                 </div>
                             </div>
 
@@ -39,7 +39,7 @@ defined('ABSPATH') || die('No script kiddies please!');
                                 <h3 class="head head-card">Get matched</h3>
                                 <p>to a plan & request your first project or task.</p>
                                 <div class="icon">
-                                    <img src="<?php echo THEME_URI . '/assets/images/icon-2.svg'; ?>" alt="">
+                                    <img class="ft" src="<?php echo THEME_URI . '/assets/images/icon-2.svg'; ?>" alt="">
                                 </div>
                             </div>
 
@@ -48,7 +48,7 @@ defined('ABSPATH') || die('No script kiddies please!');
                                 <h3 class="head head-card">Receive</h3>
                                 <p>to a plan & request your first project or task.</p>
                                 <div class="icon">
-                                    <img src="<?php echo THEME_URI . '/assets/images/icon-3.svg'; ?>" alt="">
+                                    <img class="ft" src="<?php echo THEME_URI . '/assets/images/icon-3.svg'; ?>" alt="">
                                 </div>
                             </div>
 

@@ -42,20 +42,20 @@ defined('ABSPATH') || die('No script kiddies please!');
                         <div class="items">
                             <div class="item">
                                 <div>
-                                    <img
+                                    <img class="ft"
                                         src="https://cdn.prod.website-files.com/63329fb5ec1e5cdf02d0af1b/6333b2503b3392847dfde686_list-check-icon.svg" />
                                 </div>
                                 No Endless Profile Scrolling
                             </div>
                             <div class="item">
                                 <div>
-                                    <img
+                                    <img class="ft"
                                         src="https://cdn.prod.website-files.com/63329fb5ec1e5cdf02d0af1b/6333b2503b3392847dfde686_list-check-icon.svg" />
                                 </div>
                                 No Endless Profile Scrolling
                             </div>
                             <div class="item">
-                                <div><img
+                                <div><img class="ft"
                                         src="https://cdn.prod.website-files.com/63329fb5ec1e5cdf02d0af1b/6333b2503b3392847dfde686_list-check-icon.svg" />
                                 </div>
                                 No Endless Profile Scrolling

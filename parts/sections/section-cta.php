@@ -26,8 +26,8 @@ defined('ABSPATH') || die('No script kiddies please!');
                     </div>
                     <div class="item">
                         <div class="btn">
-                            <a href="#" class="btn medium dark">Book a Discovery Call</a>
-                            <a href="#" class="btn medium light">Book a Discovery Call</a>
+                            <a href="#" class="fl btn medium dark">Book a Discovery Call</a>
+                            <a href="#" class="fl btn medium light">Book a Discovery Call</a>
                         </div>
                     </div>
                 </div>

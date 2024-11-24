@@ -16,20 +16,19 @@ defined('ABSPATH') || die('No script kiddies please!');
             <div class="icon">
                 <img src="<?php echo THEME_URI . '/assets/images/icon-5.svg'; ?>" alt="Design" title="Design">
                 <img src="<?php echo THEME_URI . '/assets/images/icon-4.svg'; ?>" alt="Design" title="Design">
-
             </div>
             <div class="wrapper">
                 <div class="top">
                     <h2 class="head head-section">Recuiting & Delivery Platform for Top Remote Talent</h2>
-                    <div class="icon"><img src="<?php echo THEME_URI . '/assets/images/icon-6.svg'; ?>" alt="Design" title="Design"></div>
+                    <div class="icon"><img class="ft" src="<?php echo THEME_URI . '/assets/images/icon-6.svg'; ?>" alt="Design" title="Design"></div>
                 </div>
                 <div class="bot">
                     <div class="inner">
                         <div class="left">
                             <div class="logo">
-                                <img src="<?php echo tps_logo(); ?>" alt="Naga" title="Naga">
+                                <img class="ft" src="<?php echo tps_logo(); ?>" alt="Naga" title="Naga">
                             </div>
-                            <a href="#" class="btn medium light">Book a Discovery Call</a>
+                            <a href="#" class="fl btn medium light">Book a Discovery Call</a>
                         </div>
                         <div class="right">
                             <div class="items">

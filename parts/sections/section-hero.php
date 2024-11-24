@@ -28,8 +28,8 @@ defined('ABSPATH') || die('No script kiddies please!');
                     <div class="mid col">
                         <p id="hero-text"><?php echo esc_html(get_theme_mod('hero-text', 'Get on-demand access to your own team of designers, developers & project managers without the hassle of managing full-time employees')); ?></p>
                         <div class="buttons">
-                            <a href="#" class="btn dark border medium borad-7">Book a Discovery Call</a>
-                            <a href="#" class="btn light border medium borad-7">See Previous Work</a>
+                            <a href="#" class="fl btn dark border medium borad-7">Book a Discovery Call</a>
+                            <a href="#" class="fl btn light border medium borad-7">See Previous Work</a>
                         </div>
                     </div>
                     <div class="bot col">

@@ -75,6 +75,12 @@ function mm_load_scripts_and_libs()
 
 	//Talent.js.
 	wp_enqueue_script('talent-js', get_template_directory_uri() . '/assets/js/talent.min.js', array('jquery'), THEME_VERSION, true);
+
+	//Find-this.js.
+	wp_enqueue_script('find-this-js', get_template_directory_uri() . '/assets/js/find-images.min.js', array(), THEME_VERSION, true);
+
+	//Find Links.js.
+	wp_enqueue_script('find-links-js', get_template_directory_uri() . '/assets/js/find-links.min.js', array(), THEME_VERSION, true);
 }
 add_action('wp_enqueue_scripts', 'mm_load_scripts_and_libs', 1);
 

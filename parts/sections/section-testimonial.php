@@ -25,7 +25,7 @@ function tps_testimonial($element_id = '', $photo_name = 'testi-person-1.png')
                 <div class="wrapper">
                     <div class="left">
                         <div class="photo">
-                            <img src="<?php echo THEME_URI . '/assets/images/' . $photo_name; ?>" alt="Testimonial">
+                            <img class="ft" src="<?php echo THEME_URI . '/assets/images/' . $photo_name; ?>" alt="Testimonial">
                         </div>
                     </div>
                     <div class="right">

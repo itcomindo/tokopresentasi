@@ -30,22 +30,22 @@ defined('ABSPATH') || die('No script kiddies please!');
 
                                 <div class="add">
                                     <img src="https://cdn.prod.website-files.com/63329fb5ec1e5cdf02d0af1b/63463061c5c6f3bd3fa7c31d_63358620c3a9b1f7f13615be_white-rays.svg"
-                                        alt="">
+                                        alt="photo">
                                 </div>
 
 
                                 <div class="photo">
-                                    <img src="<?php echo THEME_URI . '/assets/images/staff-7.png'; ?>" alt="">
+                                    <img src="<?php echo THEME_URI . '/assets/images/staff-7.png'; ?>" alt="photo">
                                 </div>
                                 <div class="photo">
-                                    <img src="<?php echo THEME_URI . '/assets/images/staff-8.png'; ?>" alt="">
+                                    <img src="<?php echo THEME_URI . '/assets/images/staff-8.png'; ?>" alt="photo">
                                 </div>
                                 <div class="photo">
-                                    <img src="<?php echo THEME_URI . '/assets/images/staff-9.png'; ?>" alt="">
+                                    <img src="<?php echo THEME_URI . '/assets/images/staff-9.png'; ?>" alt="photo">
                                 </div>
                             </div>
                             <div class="icon">
-                                <img src="<?php echo THEME_URI . '/assets/images/icon-cursors.svg'; ?>" alt="">
+                                <img src="<?php echo THEME_URI . '/assets/images/icon-cursors.svg'; ?>" alt="photo">
 
                             </div>
                         </div>
@@ -83,15 +83,15 @@ defined('ABSPATH') || die('No script kiddies please!');
                             <div class="photos">
 
                                 <div class="photo">
-                                    <img src="<?php echo THEME_URI . '/assets/images/card-1.svg'; ?>">
+                                    <img src="<?php echo THEME_URI . '/assets/images/card-1.svg'; ?>" alt="photo">
                                 </div>
                                 <div class="photo">
-                                    <img src="<?php echo THEME_URI . '/assets/images/card-2.svg'; ?>">
+                                    <img src="<?php echo THEME_URI . '/assets/images/card-2.svg'; ?>" alt="photo">
                                 </div>
 
                             </div>
                             <div class="icon">
-                                <img src="<?php echo THEME_URI . '/assets/images/icon-magic.svg'; ?>">
+                                <img src="<?php echo THEME_URI . '/assets/images/icon-magic.svg'; ?>" alt="photo">
                             </div>
                         </div>
 
@@ -102,14 +102,14 @@ defined('ABSPATH') || die('No script kiddies please!');
                             <div class="photos">
 
                                 <div class="photo">
-                                    <img src="<?php echo THEME_URI . '/assets/images/card-3.svg'; ?>">
+                                    <img src="<?php echo THEME_URI . '/assets/images/card-3.svg'; ?>" alt="photo">
                                 </div>
                                 <div class="photo">
-                                    <img src="<?php echo THEME_URI . '/assets/images/card-4.svg'; ?>">
+                                    <img src="<?php echo THEME_URI . '/assets/images/card-4.svg'; ?>" alt="photo">
                                 </div>
                             </div>
                             <div class="icon">
-                                <img src="<?php echo THEME_URI . '/assets/images/icon-cursors.svg'; ?>">
+                                <img src="<?php echo THEME_URI . '/assets/images/icon-cursors.svg'; ?>" alt="photo">
 
                             </div>
                         </div>

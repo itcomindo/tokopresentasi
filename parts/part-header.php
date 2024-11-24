@@ -16,7 +16,7 @@ defined('ABSPATH') || die('No script kiddies please!');
                 <div class="items">
                     <div class="left">
                         <div class="logo">
-                            <a href="/"><img src="<?php echo tps_logo(); ?>" alt="Showcase" title="Showcase"></a>
+                            <a href="/" title="showcase"><img src="<?php echo tps_logo(); ?>" alt="Showcase" title="Showcase"></a>
                         </div>
                     </div>
                     <div class="mid">
@@ -26,8 +26,8 @@ defined('ABSPATH') || die('No script kiddies please!');
                     </div>
                     <div class="right">
                         <div class="inner">
-                            <a href="#" class="btn light normal">Apply as a Talent</a>
-                            <a href="#" class="btn dark normal">Book a Call</a>
+                            <a href="#" class="fl btn light normal">Apply as a Talent</a>
+                            <a href="#" class="fl btn dark normal">Book a Call</a>
                         </div>
                         <?php
                         get_template_part('parts/part', 'bars');
