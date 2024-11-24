@@ -47,6 +47,8 @@ define('THEME_VERSION', wp_get_theme()->get('Version'));
 // Call Themes Files.
 require_once get_template_directory() . '/assets/assets.php';
 require_once get_template_directory() . '/parts/parts.php';
+// Call Yano Customizer.
+require_once get_template_directory() . '/yano-customizer/yano-customizer.php';
 
 
 
@@ -56,3 +58,53 @@ function tps_meta_description()
     echo '<meta name="description" content="Affordable Recuiting & Delivery Platform for Top Remote Talent Around the world">';
 }
 add_action('wp_head', 'tps_meta_description', 1);
+
+
+// Yano Customizer.
+if (class_exists('Yano_Customizer')) {
+    $yano_customizer = new Yano_Customizer();
+    customizer_fields();
+}
+
+
+function customizer_hero()
+{
+    // Panel.
+    Yano::panel('yano_panel_hero', array(
+        'title' => 'Hero Section',
+        'Description' => 'This is the hero section of the website',
+        'priority' => 1,
+    ));
+
+    // Section.
+    Yano::section('yano_section_hero', array(
+        'title' => 'Hero Section',
+        'Description' => 'This is the hero section of the website',
+        'priority' => 1,
+        'panel' => 'yano_panel_hero',
+    ));
+
+    // Hero Head, Text Field.
+    Yano::field('text', [
+        'id'          => 'hero-head',
+        'label'       => 'Head Hero',
+        'description' => 'Write your website hero head',
+        'section'     => 'yano_section_hero',
+        'priority'    => 1,
+        'placeholder' => 'Write your hero head here',
+        'default'     => 'Hire Your Whole Design & Dev Team With a Few Clicks',
+    ]);
+
+    // Hero Text, Textarea Field with max length of 200.
+    Yano::field('textarea', [
+        'id'          => 'hero-text',
+        'label'       => 'Text Hero',
+        'description' => 'Write your website hero text',
+        'section'     => 'yano_section_hero',
+        'priority'    => 2,
+        'placeholder' => 'Write your hero text here',
+        'default'     => 'Get on-demand access to your own team of designers, developers & project managers without the hassle of managing full-time employees.',
+        'max_length'  => 200,
+    ]);
+}
+add_action('customize_register', 'customizer_hero');

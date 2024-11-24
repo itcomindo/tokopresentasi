@@ -10,17 +10,23 @@ defined('ABSPATH') || die('No script kiddies please!');
 
 ?>
 
+
+
+
+
+
 <section id="hero" class="section">
     <div class="inner-section">
         <div class="container">
             <div class="wrapper">
                 <div class="items">
                     <div class="top col">
-                        <h1 class="head head-section lw50mw75sw100">Hire Your Whole Design & Dev Team With a Few Clicks</h1>
+                        <h1 id="hero-head" class="head head-section lw50mw75sw100">
+                            <?php echo esc_html(get_theme_mod('hero-head', 'Hire Your Whole Design & Dev Team With a Few Clicks')); ?>
+                        </h1>
                     </div>
                     <div class="mid col">
-                        <p>Get on-demand access to your own team of designers, developers & project managers
-                            without the hassle of managing full-time employees.</p>
+                        <p id="hero-text"><?php echo esc_html(get_theme_mod('hero-text', 'Get on-demand access to your own team of designers, developers & project managers without the hassle of managing full-time employees')); ?></p>
                         <div class="buttons">
                             <a href="#" class="btn dark border medium borad-7">Book a Discovery Call</a>
                             <a href="#" class="btn light border medium borad-7">See Previous Work</a>
