@@ -1,0 +1,117 @@
+#the-page {
+  &.dark {
+    background-color: var(--color-dark-1);
+    .inner-section {
+      background-color: var(--color-dark-1);
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 33%;
+        background: linear-gradient(
+          to top,
+          var(--color-dark-1),
+          #12121280,
+          transparent
+        );
+
+        @media (max-width: 1024px) {
+          display: none;
+        }
+      }
+      .container {
+        .wrapper {
+          background-color: transparent;
+          .top {
+            h1 {
+              width: 75%;
+            }
+            p {
+              width: 50%;
+              @media (max-width: 840px) {
+                width: 75%;
+              }
+            }
+          }
+          .bot {
+            width: 100%;
+            padding-top: 9rem;
+            @media (max-width: 1024px) {
+              padding-top: 5rem;
+            }
+            .photo {
+              width: 100%;
+              aspect-ratio: 16/9;
+              overflow: hidden;
+              padding: 20px;
+              border-radius: 20px;
+              display: none;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+              @media (max-width: 1024px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Counter.
+
+#counter {
+  .inner-section {
+    .container {
+      .wrapper {
+        .items {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 40px;
+          @media (max-width: 540px) {
+            flex-direction: column;
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(100% / 3 - 40px);
+            @media (max-width: 540px) {
+              width: calc(100% - 40px);
+            }
+            span {
+              text-align: center;
+              &.num {
+                font-size: var(--font-clamp-5);
+                @media (max-width: 640px) {
+                  font-size: var(--font-clamp-4);
+                }
+              }
+              &.text {
+                font-size: 110%;
+                width: 33%;
+                @media (max-width: 1024px) {
+                  width: 50%;
+                  font-size: 100%;
+                }
+                @media (max-width: 768px) {
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

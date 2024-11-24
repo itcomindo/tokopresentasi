@@ -26,6 +26,24 @@ defined('ABSPATH') || die('No script kiddies please!');
     <?php wp_head(); ?>
 </head>
 
+<?php
+function tps_body_class($classes)
+{
+
+    // if page template is talent-page.php.
+    if (is_page_template('talent-page.php')) {
+        $classes[] = 'talent dark';
+    } else {
+        $classes[] = '';
+    }
+
+
+
+    return $classes;
+}
+add_filter('body_class', 'tps_body_class');
+?>
+
 <body <?php body_class(); ?>>
     <?php
 

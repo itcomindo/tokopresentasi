@@ -48,39 +48,61 @@ function mm_load_scripts_and_libs()
 
 	wp_enqueue_script('jquery');
 
-	// Load flickity js.
-	wp_enqueue_script('flickity-js', get_template_directory_uri() . '/assets/js/flickity.min.js', array('jquery'), THEME_VERSION, true);
 
-	// GSAP Core.
-	wp_enqueue_script('gsap-core', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), '3.12.5', true);
+	if (is_front_page() || is_page_template('talent-page.php')) {
 
-	// GSAP ScrollTrigger.
-	wp_enqueue_script('gsap-scrolltrigger', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', array(), '3.12.5', true);
+		// GSAP Core.
+		wp_enqueue_script('gsap-core', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), '3.12.5', true);
+
+		// GSAP ScrollTrigger.
+		wp_enqueue_script('gsap-scrolltrigger', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', array(), '3.12.5', true);
+	}
 
 
-	// Load global js.
-	wp_enqueue_script('global-js', get_template_directory_uri() . '/assets/js/global.min.js', array('jquery'), THEME_VERSION, true);
 
-	//infinite-scroll.js.
-	wp_enqueue_script('infinite-js', get_template_directory_uri() . '/assets/js/infinite-scroll.min.js', array('jquery'), THEME_VERSION, true);
-
-	//job-carousel.min.js.
-	wp_enqueue_script('job-carousel-js', get_template_directory_uri() . '/assets/js/job-carousel.min.js', array('jquery'), THEME_VERSION, true);
-
-	//showcase.min.js.
-	wp_enqueue_script('showcase-js', get_template_directory_uri() . '/assets/js/showcase.min.js', array('jquery'), THEME_VERSION, true);
-
-	// X.js.
-	wp_enqueue_script('x-js', get_template_directory_uri() . '/assets/js/x.min.js', array('jquery'), THEME_VERSION, true);
-
-	//Talent.js.
-	wp_enqueue_script('talent-js', get_template_directory_uri() . '/assets/js/talent.min.js', array('jquery'), THEME_VERSION, true);
 
 	//Find-this.js.
 	wp_enqueue_script('find-this-js', get_template_directory_uri() . '/assets/js/find-images.min.js', array(), THEME_VERSION, true);
 
 	//Find Links.js.
 	wp_enqueue_script('find-links-js', get_template_directory_uri() . '/assets/js/find-links.min.js', array(), THEME_VERSION, true);
+
+	// Load global js.
+	wp_enqueue_script('global-js', get_template_directory_uri() . '/assets/js/global.min.js', array('jquery'), THEME_VERSION, true);
+
+	if (is_front_page()) {
+
+		// Load flickity js.
+		wp_enqueue_script('flickity-js', get_template_directory_uri() . '/assets/js/flickity.min.js', array('jquery'), THEME_VERSION, true);
+
+
+
+		//infinite-scroll.js.
+		wp_enqueue_script('infinite-js', get_template_directory_uri() . '/assets/js/infinite-scroll.min.js', array('jquery'), THEME_VERSION, true);
+
+		//job-carousel.min.js.
+		wp_enqueue_script('job-carousel-js', get_template_directory_uri() . '/assets/js/job-carousel.min.js', array('jquery'), THEME_VERSION, true);
+
+		//showcase.min.js.
+		wp_enqueue_script('showcase-js', get_template_directory_uri() . '/assets/js/showcase.min.js', array('jquery'), THEME_VERSION, true);
+
+		//talent.min.js.
+		wp_enqueue_script('talent-js', get_template_directory_uri() . '/assets/js/talent.min.js', array('jquery'), THEME_VERSION, true);
+
+		// X.js.
+		wp_enqueue_script('x-js', get_template_directory_uri() . '/assets/js/x.min.js', array('jquery'), THEME_VERSION, true);
+	}
+
+
+
+
+
+
+	// if page is talent-page.php.
+	if (is_page_template('talent-page.php')) {
+		//Talent.js.
+		wp_enqueue_script('talent-js', get_template_directory_uri() . '/assets/js/talent-page.min.js', array(), THEME_VERSION, true);
+	}
 }
 add_action('wp_enqueue_scripts', 'mm_load_scripts_and_libs', 1);
 

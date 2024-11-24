@@ -3,7 +3,6 @@
   .inner-section {
     .container {
       .wrapper {
-        background-color: var(--color-light-2);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -18,9 +17,6 @@
             height: 100%;
             object-fit: cover;
           }
-        }
-        h1 {
-          color: red;
         }
       }
     }
