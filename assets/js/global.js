@@ -75,7 +75,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 jQuery(this).append($boxName);
             });
         }
-        appendBoxName();
+        // appendBoxName();
         //append box name on element .groups .group .item end.
 
 
