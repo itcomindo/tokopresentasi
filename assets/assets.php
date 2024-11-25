@@ -75,8 +75,6 @@ function mm_load_scripts_and_libs()
 		// Load flickity js.
 		wp_enqueue_script('flickity-js', get_template_directory_uri() . '/assets/js/flickity.min.js', array('jquery'), THEME_VERSION, true);
 
-
-
 		//infinite-scroll.js.
 		wp_enqueue_script('infinite-js', get_template_directory_uri() . '/assets/js/infinite-scroll.min.js', array('jquery'), THEME_VERSION, true);
 
@@ -91,6 +89,9 @@ function mm_load_scripts_and_libs()
 
 		// X.js.
 		wp_enqueue_script('x-js', get_template_directory_uri() . '/assets/js/x.min.js', array('jquery'), THEME_VERSION, true);
+
+		// front-page.js.
+		wp_enqueue_script('front-page-js', get_template_directory_uri() . '/assets/js/front-page.min.js', array('jquery'), THEME_VERSION, true);
 	}
 
 

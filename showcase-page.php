@@ -15,7 +15,8 @@ get_header();
     <div class="inner-section">
         <div class="container">
             <div class="wrapper">
-                <h1 class="head head-section">Under Construction</h1>
+                <h1 id="showcase-head" class="head head-section">Under Construction</h1>
+                <p id="showcase-text" class="text-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quaerat? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, fugit!</p>
                 <div class="photo">
                     <img src="<?php echo THEME_URI . '/assets/images/uc.png'; ?>" alt="Underconstruction">
                 </div>
