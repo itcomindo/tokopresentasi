@@ -1,6 +1,11 @@
 body {
   &.talent {
     #header {
+      .btn {
+        &.light {
+          color: var(--color-light-4) !important;
+        }
+      }
       .bars {
         span {
           background-color: var(--color-light-4) !important;
@@ -249,10 +254,13 @@ body {
                 display: flex;
                 flex-direction: row;
                 gap: 20px;
-                a {
+                .btn {
                   &.dark {
                     box-shadow: var(--box-shadow-2);
                     border-radius: 7px;
+                  }
+                  &.light {
+                    color: var(--color-dark-3);
                   }
                 }
                 @media (max-width: 840px) {

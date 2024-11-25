@@ -976,6 +976,9 @@ a.btn.borad-7 {
   border-radius: 7px;
 }
 
+body.talent #header .btn.light {
+  color: var(--color-light-4) !important;
+}
 body.talent #header .bars span {
   background-color: var(--color-light-4) !important;
 }
@@ -1332,10 +1335,13 @@ body #header .inner-section .container .wrapper .items .right .inner {
   flex-direction: row;
   gap: 20px;
 }
-body #header .inner-section .container .wrapper .items .right .inner a.dark {
+body #header .inner-section .container .wrapper .items .right .inner .btn.dark {
   -webkit-box-shadow: var(--box-shadow-2);
   box-shadow: var(--box-shadow-2);
   border-radius: 7px;
+}
+body #header .inner-section .container .wrapper .items .right .inner .btn.light {
+  color: var(--color-dark-3);
 }
 @media (max-width: 840px) {
   body #header .inner-section .container .wrapper .items .right .inner {
@@ -3649,6 +3655,24 @@ body #header .inner-section .container .wrapper .items .right .inner a.dark {
   align-items: center;
   padding-top: 80px;
   padding-bottom: 80px;
+}
+@media (max-width: 840px) {
+  #the-page.first .inner-section .container .wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 640px) {
+  #the-page.first .inner-section .container .wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 540px) {
+  #the-page.first .inner-section .container .wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 #the-page.first .inner-section .container .wrapper .photo {
   width: 300px;
