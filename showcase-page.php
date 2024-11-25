@@ -15,8 +15,8 @@ get_header();
     <div class="inner-section">
         <div class="container">
             <div class="wrapper">
-                <h1 id="showcase-head" class="head head-section">Under Construction</h1>
-                <p id="showcase-text" class="text-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quaerat? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, fugit!</p>
+                <h1 id="showcase-head" class="head head-section"><?php echo esc_html(get_theme_mod('showcase-head', 'Hire Your Whole Design & Dev Team With a Few Clicks')); ?></h1>
+                <p id="showcase-text" class="text-section"><?php echo esc_html(get_theme_mod('showcase-text', 'Hire Your Whole Design & Dev Team With a Few Clicks')); ?></p>
                 <div class="photo">
                     <img src="<?php echo THEME_URI . '/assets/images/uc.png'; ?>" alt="Underconstruction">
                 </div>
