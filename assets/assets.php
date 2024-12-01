@@ -101,6 +101,14 @@ function mm_load_scripts_and_libs()
 
 	// if page is talent-page.php.
 	if (is_page_template('talent-page.php')) {
+
+		// https://cdnjs.cloudflare.com/ajax/libs/stickybits/3.7.11/stickybits.min.js.
+		wp_enqueue_script('sticky-kit-js', 'https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js', array(), '3.7.11', true);
+
+		// https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.3.0/sticky.min.js.
+		wp_enqueue_script('sticky-js', 'https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.3.0/sticky.min.js', array(), '1.3.0', true);
+
+
 		//Talent.js.
 		wp_enqueue_script('talent-js', get_template_directory_uri() . '/assets/js/talent-page.min.js', array(), THEME_VERSION, true);
 	}

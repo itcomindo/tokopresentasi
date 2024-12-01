@@ -216,5 +216,80 @@ function timg($file_name)
         </div>
     </div>
 </div>
+
+<section id="process" class="section section-small">
+    <div class="inner-section">
+        <div class="container">
+            <div id="pwr" class="wrapper">
+                <div class="left stk-left">
+                    <div class="left-content">
+                        <h1>Our Screening & Talent Development Process</h1>
+                        <a href="#" class="btn medium">Join Talent Community</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="items">
+                        <?php
+                        echo tps_dummy_cards(6);
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="lib-carousel" class="section section-high">
+    <div class="inner-section">
+        <div class="container">
+            <div class="wrapper">
+                <div class="top">
+                    <h2 class="head head-section lw50mw75sw100">Cherry-Pick Skills On-Demand</h2>
+                    <p>Your PM delegates work on a task-by-task basis and ensures a qualified expert gets the job done, even if you need these skills only for one day.</p>
+                </div>
+                <div class="bot">
+                    <div class="groups">
+                        <div class="group">
+                            <ul class="list-no-style list-1">
+                                <li>Zapier</li>
+                                <li>WordPress</li>
+                                <li>Joomla!</li>
+                                <li>Drupal</li>
+                                <li>Magento</li>
+                                <li>WebFlow</li>
+                                <li>VBuletin</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <?php
 get_footer();
+
+
+
+function tps_dummy_cards($card = 6)
+{
+    ob_start();
+
+    for ($i = 0; $i < $card; $i++) {
+?>
+        <div class="item stk">
+            <h3>Proses <?php echo $i; ?></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptas aperiam labore maiores.
+                Veniam, corrupti.</p>
+        </div>
+<?php
+    }
+
+
+    return ob_get_clean();
+}

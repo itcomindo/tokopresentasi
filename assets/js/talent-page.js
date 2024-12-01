@@ -51,7 +51,38 @@ window.addEventListener('DOMContentLoaded', () => {
         animPhoto();
 
 
-        animPhoto();
+
+
+        //Sticky Process Start.
+        function stickyProcessxxxx() {
+            console.log('Sticky Process');
+
+            // Sticky untuk elemen kiri
+            jQuery("#pwr .left").stick_in_parent({
+                offset_top: 80
+            });
+        }
+
+
+        function stickyProcess() {
+
+            // Sticky untuk elemen kiri
+            jQuery("#pwr .left").stick_in_parent({
+                offset_top: 80
+            });
+
+            jQuery(".stk").stick_in_parent({
+                offset_top: 330
+            });
+
+            // var sticky = new Sticky('.stk');
+            console.log('Sticky Process');
+        }
+
+        stickyProcess();
+        //Sticky Process End.
+
+
 
 
 

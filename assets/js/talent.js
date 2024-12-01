@@ -42,6 +42,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
         talentDesktop();
 
+
+        //Sticky Process Start.
+        function stickyProcess() {
+            jQuery('#process .left').stickybits();
+            console.log('Sticky Process');
+        }
+        stickyProcess();
+        //Sticky Process End.
+
+
+
+
+
+
+
+
         jQuery(window).resize(function () {
             talentDesktop();
         });

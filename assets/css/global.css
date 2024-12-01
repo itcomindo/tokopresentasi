@@ -4032,3 +4032,146 @@ body #header .inner-section .container .wrapper .items .right .inner .btn.light 
     display: none;
   }
 }
+
+#process {
+  background-color: var(--color-light-2);
+  color: var(--color-dark-1);
+}
+#process .inner-section .container .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  position: relative;
+}
+#process .inner-section .container .wrapper .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: calc(100% - 550px);
+  padding-top: 15rem;
+}
+#process .inner-section .container .wrapper .left .left-content h1 {
+  width: 60%;
+}
+#process .inner-section .container .wrapper .left .left-content a.btn {
+  border: 1px solid var(--color-dark-1);
+}
+#process .inner-section .container .wrapper .right {
+  width: 550px;
+}
+#process .inner-section .container .wrapper .right .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 1920px;
+  position: relative;
+  top: 15rem;
+  padding-bottom: 10rem;
+}
+#process .inner-section .container .wrapper .right .items .item {
+  height: 250px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: #fff;
+  -webkit-box-shadow: var(--box-shadow-3);
+  box-shadow: var(--box-shadow-3);
+  border: 1px solid var(--transparent-dark-1);
+  margin-bottom: 40px;
+}
+#process .inner-section .container .wrapper .right .items .item h3 {
+  font-size: var(--font-clamp-2);
+  margin: 4px 0;
+}
+#process .inner-section .container .wrapper .right .items .item p {
+  font-size: 16px;
+}
+#process .inner-section .container .wrapper .right .items .item:nth-child(odd) {
+  -webkit-transform: rotate(-1.5deg);
+  transform: rotate(-1.5deg);
+}
+#process .inner-section .container .wrapper .right .items .item:nth-child(even) {
+  -webkit-transform: rotate(1.5deg);
+  transform: rotate(1.5deg);
+}
+
+#lib-carousel {
+  background-color: var(--color-light-2);
+  color: var(--color-primary);
+}
+#lib-carousel .inner-section .container .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 40px;
+}
+#lib-carousel .inner-section .container .wrapper .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+#lib-carousel .inner-section .container .wrapper .top p {
+  width: 75%;
+}
+#lib-carousel .inner-section .container .wrapper .bot .groups {
+  color: var(--color-dark-1);
+}
+#lib-carousel .inner-section .container .wrapper .bot .groups .group ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-column-gap: 80px;
+  -moz-column-gap: 80px;
+  column-gap: 80px;
+  white-space: nowrap;
+  font-size: var(--font-clamp-2);
+}
+#lib-carousel .inner-section .container .wrapper .bot .groups .group ul li {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  white-space: nowrap;
+}
